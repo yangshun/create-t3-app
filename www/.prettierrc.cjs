@@ -5,7 +5,7 @@ module.exports = {
     require.resolve("prettier-plugin-organize-imports"),
     require.resolve("prettier-plugin-tailwindcss"),
   ],
-  tailwindConfig: "./tailwind.config.cjs",
+  tailwindConfig: "./tailwind.config.ts",
   importOrder: [
     "^(react/(.*)$)|^(react$)",
     "^(next/(.*)$)|^(next$)",

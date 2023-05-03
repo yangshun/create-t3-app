@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#check-icon {
+  stroke-dasharray: 450;
+  stroke-dashoffset: -30;
+  animation: draw 2s linear normal;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 200;
+  }
+}
