@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import CodeCard from "../cli";
 import PageSection from "../pageSection";
 
