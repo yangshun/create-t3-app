@@ -8,7 +8,7 @@ export default function Banner() {
     if (cooldown) return;
     setCooldown(true);
     navigator.clipboard.writeText(commandRef.current?.textContent ?? "");
-    setTimeout(() => setCooldown(false), 2000);
+    setTimeout(() => setCooldown(false), 2500);
   }
 
   return (
