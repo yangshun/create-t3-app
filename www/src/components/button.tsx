@@ -33,7 +33,7 @@ export function Button(props: {
           ? "rounded-md"
           : "rounded-none",
         variant === "primary"
-          ? "bg-t3-purple-100 hover:bg-t3-purple-200 text-slate-800"
+          ? "bg-t3-purple-100 text-slate-800 hover:bg-t3-purple-200"
           : "bg-white/10 text-white hover:bg-white/20",
         specialHover ? "duration-500 hover:shadow hover:shadow-[#300171]" : "",
         className,

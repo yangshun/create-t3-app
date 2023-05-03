@@ -34,8 +34,8 @@ export default function Features() {
 
               <React.Fragment>
                 Next.js offers a lightly opinionated, heavily optimized approach
-                to creating applications using React. It's the industry standard
-                and we're proud to build on top of it :)
+                to creating applications using React. It&apos;s the industry
+                standard and we&apos;re proud to build on top of it :)
               </React.Fragment>
             </Card>
             <Card title="Prisma" href="https://www.prisma.io/">
@@ -78,8 +78,8 @@ export default function Features() {
               </svg>
               <React.Fragment>
                 We firmly believe TypeScript will help you be a better web
-                developer. Whether you're new to JS or a seasoned pro, the
-                "strictness" of TypeScript leads to smoother building.
+                developer. Whether you&apos;re new to JS or a seasoned pro, the
+                &quot;strictness&quot; of TypeScript leads to smoother building.
               </React.Fragment>
             </Card>
 
@@ -97,8 +97,8 @@ export default function Features() {
               <React.Fragment>
                 Tailwind CSS is a utility-first CSS framework that helps you
                 build beautiful, responsive designs without any extra
-                configuration. It’s built with utility-first principles, and is
-                completely customizable and extendable.
+                configuration. It&apos;s built with utility-first principles,
+                and is completely customizable and extendable.
               </React.Fragment>
             </Card>
 
@@ -119,9 +119,9 @@ export default function Features() {
                 ></path>
               </svg>
               <React.Fragment>
-                If your frontend and backend are TypeScript, it's really hard to
-                beat the DX of tRPC. Kinda like GraphQL but without the work -
-                seriously this lib is magic.
+                If your frontend and backend are TypeScript, it&apos;s really
+                hard to beat the DX of tRPC. Kinda like GraphQL but without the
+                work - seriously this lib is magic.
               </React.Fragment>
             </Card>
 

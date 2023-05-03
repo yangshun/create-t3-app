@@ -10,7 +10,7 @@ export function Quote(props: {
   };
 }) {
   return (
-    <blockquote className="quote relative my-3 w-full rounded-md border-l-4 border-neutral-500 bg-purple-200 p-2 text-sm italic text-zinc-900 dark:bg-purple-300/20 dark:text-purple-50">
+    <blockquote className="quote border-neutral-500 relative my-3 w-full rounded-md border-l-4 bg-purple-200 p-2 text-sm italic text-zinc-900 dark:bg-purple-300/20 dark:text-purple-50">
       <div className="relative flex w-fit items-center justify-center p-1">
         <p className="mb-4 text-lg">
           <span aria-hidden="true">&quot;</span>
@@ -18,10 +18,10 @@ export function Quote(props: {
           <span aria-hidden="true">&quot;</span>
         </p>
       </div>
-      <cite className="flex items-center justify-end pr-4 pb-2">
+      <cite className="flex items-center justify-end pb-2 pr-4">
         <Image
           alt="Avatar of @alexdotjs"
-          className="w-12 rounded-full bg-neutral-500 [margin-inline-end:16px]"
+          className="bg-neutral-500 w-12 rounded-full [margin-inline-end:16px]"
           height={48}
           width={48}
           src={props.author.avatar}

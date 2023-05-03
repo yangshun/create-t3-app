@@ -18,8 +18,8 @@ export default function About() {
         </p>
         <p className="mx-auto mt-4 max-w-3xl text-base text-t3-purple-200 md:text-xl lg:text-xl xl:text-xl">
           After countless projects and many years on this tech, we have lots of
-          opinions and insights. We've done our best to encode them into this
-          CLI.
+          opinions and insights. We&apos;ve done our best to encode them into
+          this CLI.
         </p>
         <p className="mx-auto mt-4 max-w-3xl text-base text-t3-purple-200 md:text-xl lg:text-xl xl:text-xl">
           This is NOT an all-inclusive template.{" "}
