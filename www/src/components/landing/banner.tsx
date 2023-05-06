@@ -8,7 +8,7 @@ export default function Banner() {
     if (cooldown) return;
     setCooldown(true);
     navigator.clipboard.writeText(commandRef.current?.textContent ?? "");
-    setTimeout(() => setCooldown(false), 2000);
+    setTimeout(() => setCooldown(false), 2500);
   }
 
   return (
@@ -25,10 +25,10 @@ export default function Banner() {
                       {" "}
                       full-stack,{" "}
                     </span>
-                    <span className="text-[hsl(240,100%,70%)]">
-                      typesafe{" "}
-                    </span>
-                    <span className="text-[hsl(280,100%,60%)]">Next.js</span>{" "}
+                    <span className="text-[hsl(240,100%,70%)]">typesafe </span>
+                    <span className="text-[hsl(280,100%,60%)]">
+                      Next.js
+                    </span>{" "}
                     app
                   </h1>
 
@@ -77,17 +77,25 @@ export default function Banner() {
                   <div className="flex w-full flex-col items-center">
                     <div className="relative mt-4 flex h-full xl:mt-8">
                       <button
-                        className="border-t3-purple-200/20 bg-t3-purple-100/10 hover:border-t3-purple-300/50 hover:bg-t3-purple-100/20 relative flex cursor-pointer flex-row items-center gap-2 rounded-md border px-2 py-2 text-sm transition-colors duration-300 md:px-3 md:py-3 md:text-lg lg:px-5 lg:py-4 lg:text-xl"
+                        className="relative flex cursor-pointer flex-row items-center gap-2 rounded-md border border-t3-purple-200/20 bg-t3-purple-100/10 px-2 py-2 text-sm transition-colors duration-300 hover:border-t3-purple-300/50 hover:bg-t3-purple-100/20 md:px-3 md:py-3 md:text-lg lg:px-5 lg:py-4 lg:text-xl"
                         title="Copy the command to get started"
                         id="command"
                         onClick={() => onCommandClick()}
                       >
-                        <code id="command-text" ref={commandRef} className="text-t3-purple-100">
+                        <code
+                          id="command-text"
+                          ref={commandRef}
+                          className="text-t3-purple-100"
+                        >
                           npm create t3-app@latest
                         </code>
                         <svg
                           id="copy-icon"
-                          className={cooldown ? "hidden stroke-t3-purple-100" : "stroke-t3-purple-100"}
+                          className={
+                            cooldown
+                              ? "hidden stroke-t3-purple-100"
+                              : "stroke-t3-purple-100"
+                          }
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -110,7 +118,11 @@ export default function Banner() {
                         </svg>
                         <svg
                           id="check-icon"
-                          className={!cooldown ? "hidden stroke-t3-purple-100" : "stroke-t3-purple-100"}
+                          className={
+                            !cooldown
+                              ? "hidden stroke-t3-purple-100"
+                              : "stroke-t3-purple-100"
+                          }
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
