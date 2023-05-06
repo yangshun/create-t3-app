@@ -1,8 +1,9 @@
-import type { ReactNode } from "react";
+import type { ReactElement, ReactNode } from "react";
 
 export default function Card(props: {
   title: string;
   href: string;
+  icon: ReactElement;
   children: ReactNode;
 }) {
   const { title, href } = props;
@@ -10,7 +11,7 @@ export default function Card(props: {
   return (
     <div className="relative flex flex-col justify-between overflow-hidden rounded-md border border-t3-purple-200/20 bg-white/5 transition-colors hover:border-t3-purple-300/50">
       <div className="flex items-center space-x-4 bg-white/10 p-2 pl-5 transition-colors hover:bg-white/20">
-        <slot name="icon" />
+        {props.icon}
         <p className="text-lg font-medium leading-6 text-t3-purple-200 md:text-xl">
           <a
             href={href}

@@ -1,6 +1,7 @@
 import About from "~/components/landing/about";
 import Banner from "~/components/landing/banner";
-import Features from "~/components/landing/features";
+import Community from "~/components/landing/community/community";
+import Features from "~/components/landing/stack/features";
 import LandingLayout from "~/components/layouts/landing";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Banner />
       <About />
       <Features />
+      <Community />
     </LandingLayout>
   );
 }
